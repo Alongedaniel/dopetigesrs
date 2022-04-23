@@ -4,27 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dopetigesrs/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
+    <div class="mobile-nav opacity">
+        <h1>DopeTigers</h1>
+        <ul class="mobile-nav-links">
+            <li>
+                <a href="" class="mobile-nav-link">Features</a>
+            </li>
+            <li>
+                <a href="#galley" class="mobile-nav-link">Gallery</a>
+            </li>
+            <li>
+                <a href="" class="mobile-nav-link">Launch</a>
+            </li>
+            <li>
+                <a href="" class="mobile-nav-link">About</a>
+            </li>
+        </ul>
+    </div>
     <nav id="navbar">
-        <div class="logo">
-            <img src="../dopetigesrs/images/logo (2).png" alt="" class="logo-image">
+        <a href="./index.html" class="logo"> 
+                       <img src="./images/logo (2).png" alt="" class="logo-image">
             <h1 class="logo-header">Dope<span class="span">Tigers</span></h1>
-        </div>
+    </a>
         <ul class="nav-links">
             <li>
                 <a href="" class="nav-link">Features</a>
             </li>
             <li>
-                <a href="" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
             </li>
             <li>
                 <a href="" class="nav-link">Launch</a>
             </li>
+            <li>
+                <a href="" class="nav-link">About</a>
+            </li>
         </ul>
+        <i class="fa-solid fa-bars menu-bar" onclick="toggleMenu()"></i>
     </nav>
-    <script src="../dopetigesrs/script/script.js"></script>
+    <header id="hero-container">
+        <div class="hero">
+            <p class="launch">LAUNCHING SOON</p>
+            <h1 class="hero-header">An NFT like no other</h1>
+            <p class="hero-subtitle">To extiction,the great beyond and the mind blowing develpment.</p>
+            <p class="hero-subtitle">We welcome the <span class="span">DOPETIGERS</span></p>
+        </div>
+        <img class="hero-image" src="./images/Group 11.png" alt="">
+    </header>
+    <section class="categories">
+        <h1 class="categories-header">Sabre Toothed Tigers</h1>
+        <div id="gallery">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+            <img src="./images/Group 5442.png" alt="" class="arts">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+        <div class="footer-logo">
+            <h1 class="footer-logo-header"><span class="span">Dope</span>Tigers</h1>
+        </div>
+        <div class="footer-nav">
+            <h1 class="footer-nav-header">Check out our social media platforms</h1>
+            <ul class="footer-nav-links">
+                <li><a class="footer-nav-link" href="https://twitter.com/dopetigers_nft?t=S5sdy42XJMarpNV6dICNjQ&s=03" target="blank">Our Twitter</a></li>
+                <li><a class="footer-nav-link" href="https://instagram.com/dopetiger1?igshid=YmMyMTA2M2Y=" target="blank">Our Instagram</a></li>
+                <li><a class="footer-nav-link" href="https://opensea.io/Dope-Tigers " target="blank">OpenSea</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">copyright@dopetigers2022</p>
+    </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>
