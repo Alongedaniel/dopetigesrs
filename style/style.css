@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+:root {
+  --primary-color:#fff;
+  --text-color-dark2:#555;
+  --text-color-dark1:#111;
+  --anchor-color:#FF3998;
+  --span:#565367;
+  --padding:3rem 5vw;
+}
+
+#navbar {
+  padding: var(--padding);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .7rem;
+  cursor: pointer;
+}
+
+#navbar .logo .logo-header {
+  color: var(--text-color-dark1);
+}
+
+#navbar .logo .logo-header .span {
+  color: var(--span);
+}
+
+#navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+  list-style: none;
+}
+
+#navbar .nav-links .nav-link {
+  text-decoration: none;
+  color: var(--text-color-dark2);
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#navbar .nav-links .nav-link:hover {
+  color: var(--anchor-color);
+  font-weight: 900;
+}
+/*# sourceMappingURL=style.css.map */
