@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(to left, #111, #14b7cc);
+  background: linear-gradient(to left, #444, #14b7cc);
 }
 
 :root {
@@ -16,7 +16,7 @@ body {
   --text-color-dark2: #333;
   --text-color-dark1: #111;
   --anchor-color: #ff3939;
-  --span: #444253;
+  --span: #222;
   --padding: 3rem 5vw;
   --text-color-light: #f5f5f5;
 }
@@ -30,7 +30,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 3vh;
-  background: linear-gradient(to bottom, #111, #14b7cc);
+  background: linear-gradient(to bottom, #444, #14b7cc);
 
   .logo {
     display: flex;
@@ -42,9 +42,11 @@ body {
 
     .logo-header {
       color: var(--text-color-dark1);
+      font-style: italic;
 
       .span {
         color: var(--span);
+        font-style: oblique;
       }
     }
   }
@@ -80,7 +82,7 @@ body {
   padding: 1rem;
   z-index: 1;
   top: 100px;
-  background: linear-gradient(to bottom, #111, #14b7cc);
+  background: linear-gradient(to bottom, #444, #14b7cc);
   width: 70%;
   left: 10px;
   height: 40vh;
@@ -106,6 +108,10 @@ body {
       border-bottom: 1px solid var(--text-color-dark1);
     }
   }
+
+  .span {
+    font-style: italic;
+  }
 }
 
 .opacity {
@@ -127,7 +133,8 @@ body {
 
     .launch {
       color: var(--anchor-color);
-      font-size: 10px;
+      font-size: 14px;
+      font-style: italic;
     }
 
     .hero-header {
@@ -158,6 +165,7 @@ body {
 
   .categories-header {
     font-size: 40px;
+    font-style: italic;
   }
 
   .categories-subtitle {
@@ -177,7 +185,7 @@ body {
 
 .footer {
   padding: var(--padding);
-  background: linear-gradient(to right, #111, #14b7cc);
+  background: linear-gradient(to right, #444, #14b7cc);
 
   .footer-top {
     display: flex;
@@ -207,7 +215,7 @@ body {
     list-style: none;
     margin-top: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     // position: fixed;
     // bottom: 400px;
@@ -219,7 +227,7 @@ body {
       text-decoration: none;
       cursor: pointer;
       transition: all 0.4s linear;
-      font-size: 40px;
+      font-size: 25px;
     }
 
     .footer-nav-link:hover {

@@ -9,8 +9,8 @@
 }
 
 body {
-  background: -webkit-gradient(linear, right top, left top, from(#111), to(#14b7cc));
-  background: linear-gradient(to left, #111, #14b7cc);
+  background: -webkit-gradient(linear, right top, left top, from(#444), to(#14b7cc));
+  background: linear-gradient(to left, #444, #14b7cc);
 }
 
 :root {
@@ -18,7 +18,7 @@ body {
   --text-color-dark2: #333;
   --text-color-dark1: #111;
   --anchor-color: #ff3939;
-  --span: #444253;
+  --span: #222;
   --padding: 3rem 5vw;
   --text-color-light: #f5f5f5;
 }
@@ -41,8 +41,8 @@ body {
   position: fixed;
   width: 100vw;
   height: 3vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#14b7cc));
-  background: linear-gradient(to bottom, #111, #14b7cc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#14b7cc));
+  background: linear-gradient(to bottom, #444, #14b7cc);
 }
 
 #navbar .logo {
@@ -63,10 +63,12 @@ body {
 
 #navbar .logo .logo-header {
   color: var(--text-color-dark1);
+  font-style: italic;
 }
 
 #navbar .logo .logo-header .span {
   color: var(--span);
+  font-style: oblique;
 }
 
 #navbar .nav-links {
@@ -107,8 +109,8 @@ body {
   padding: 1rem;
   z-index: 1;
   top: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#14b7cc));
-  background: linear-gradient(to bottom, #111, #14b7cc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#14b7cc));
+  background: linear-gradient(to bottom, #444, #14b7cc);
   width: 70%;
   left: 10px;
   height: 40vh;
@@ -141,6 +143,10 @@ body {
   margin-left: 1rem;
   color: var(--anchor-color);
   border-bottom: 1px solid var(--text-color-dark1);
+}
+
+.mobile-nav .span {
+  font-style: italic;
 }
 
 .opacity {
@@ -176,7 +182,8 @@ body {
 
 #hero-container .hero .launch {
   color: var(--anchor-color);
-  font-size: 10px;
+  font-size: 14px;
+  font-style: italic;
 }
 
 #hero-container .hero .hero-header {
@@ -206,6 +213,7 @@ body {
 
 .categories .categories-header {
   font-size: 40px;
+  font-style: italic;
 }
 
 .categories .categories-subtitle {
@@ -224,8 +232,8 @@ body {
 
 .footer {
   padding: var(--padding);
-  background: -webkit-gradient(linear, left top, right top, from(#111), to(#14b7cc));
-  background: linear-gradient(to right, #111, #14b7cc);
+  background: -webkit-gradient(linear, left top, right top, from(#444), to(#14b7cc));
+  background: linear-gradient(to right, #444, #14b7cc);
 }
 
 .footer .footer-top {
@@ -269,10 +277,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 1rem;
 }
 
@@ -283,7 +291,7 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .footer .footer-nav-links .footer-nav-link:hover {
