@@ -100,7 +100,7 @@ body {
       color: var(--text-color-dark1);
       font-size: 22px;
       border-bottom: 1px solid var(--anchor-color);
-      transition: all 0.4s linear;
+      transition: all 0.45s ease-in-out;
     }
     .mobile-nav-link:hover {
       margin-left: 1rem;
@@ -135,6 +135,13 @@ body {
       color: var(--anchor-color);
       font-size: 14px;
       font-style: italic;
+      animation: scale 2s linear 1s infinite;
+    }
+
+    @keyframes scale {
+      100% {
+        letter-spacing: 0.3rem;
+      }
     }
 
     .hero-header {
