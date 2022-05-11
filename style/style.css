@@ -111,10 +111,14 @@ body {
   top: 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#14b7cc));
   background: linear-gradient(to bottom, #444, #14b7cc);
-  width: 70%;
+  width: 300px;
   left: 10px;
-  height: 40vh;
+  height: 400px;
   border-radius: 1rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .mobile-nav .mobile-nav-links {
@@ -150,8 +154,8 @@ body {
 }
 
 .opacity {
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: all;
 }
 
 #hero-container {
