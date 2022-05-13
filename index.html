@@ -26,13 +26,13 @@
                 <a href="" class="mobile-nav-link">Launch</a>
             </li>
             <li>
-                <a href="" class="mobile-nav-link">About</a>
+                <a href="#footer" class="mobile-nav-link">Contact</a>
             </li>
         </ul>
     </div>
     <nav id="navbar">
         <a href="./index.html" class="logo">
-            <img src="./images/logo (2).png" alt="" class="logo-image">
+            <img src="./images/FD0B6E68-A5CA-4CC3-9315-D0C05EAF6F0D.png" alt="" class="logo-image">
             <h1 class="logo-header">Dope<span class="span">Tigers</span></h1>
         </a>
         <ul class="nav-links">
@@ -46,10 +46,10 @@
                 <a href="" class="nav-link">Launch</a>
             </li>
             <li>
-                <a href="" class="nav-link">About</a>
+                <a href="#footer" class="nav-link">Contact</a>
             </li>
         </ul>
-        <i class="fa-solid fa-bars menu-bar" onclick="toggleMenu()"></i>
+        <i class="fa-solid fa-bars menu-bar close" onclick="toggleMenu()"></i>
     </nav>
     <header id="hero-container" class="close" onclick="closeMenu()">
         <div class="hero">
@@ -58,14 +58,23 @@
             <p class="hero-subtitle">To Extinction, the great beyond and the mind blowing develpment</p>
             <p class="hero-subtitle">We welcome the <span class="span">DOPETIGERS</span></p>
         </div>
-        <img class="hero-image" src="./images/Group 11.png" alt="">
+        <div class="overlay"></div>
+        <!-- <img class="hero-image" src="./images/Group 11.png" alt=""> -->
     </header>
+    <section class="opensea">
+        <h2 class="categories-subtitle">Check out our arts via <a class="opensea-link"
+                href="https://opensea.io/Dope-Tigers " target="blank">OpenSea</a></h2>
+        <p class="click-to-view">click image below to view</p>
+        <img src="./images/ezgif.com-gif-maker.gif" alt="" class="sample-image" onclick="sampleImg()">
+        <div class="open-image ">
+            <div class="background"></div>
+            <img class="opensea-image" src="./images/ezgif.com-gif-maker.gif" alt="">
+            <p class="close-img" onclick="closeImg()">close</p>
+        </div>
+    </section>
     <section class="categories close">
         <h1 class="categories-header">Sabre Toothed Tigers</h1>
-        <p class="categories-subtitle">Check out our arts via <a class="opensea-link"
-                href="https://opensea.io/Dope-Tigers " target="blank">OpenSea</a></p>
         <div id="gallery">
-            <img src="./images/Group 5442.png" alt="" class="arts">
             <img src="./images/Group 5442.png" alt="" class="arts">
             <img src="./images/Group 5442.png" alt="" class="arts">
             <img src="./images/Group 5442.png" alt="" class="arts">
@@ -79,7 +88,7 @@
             <img src="./images/Group 5442.png" alt="" class="arts">
         </div>
     </section>
-    <footer class="footer close">
+    <footer id="footer" class="close">
         <div class="footer-top">
             <div class="footer-logo">
                 <h1 class="footer-logo-header"><span class="span">Dope</span>Tigers</h1>

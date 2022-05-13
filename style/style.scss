@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +12,7 @@
 
 body {
   background: linear-gradient(to left, #444, #14b7cc);
+  position: relative;
 }
 
 :root {
@@ -16,7 +20,7 @@ body {
   --text-color-dark2: #333;
   --text-color-dark1: #111;
   --anchor-color: #ff3939;
-  --span: #222;
+  --span: #ff3939;
   --padding: 3rem 5vw;
   --text-color-light: #f5f5f5;
 }
@@ -31,6 +35,7 @@ body {
   width: 100vw;
   height: 3vh;
   background: linear-gradient(to bottom, #444, #14b7cc);
+  z-index: 9;
 
   .logo {
     display: flex;
@@ -48,6 +53,11 @@ body {
         color: var(--span);
         font-style: oblique;
       }
+    }
+
+    .logo-image {
+      width: 50px;
+      border-radius: 2rem;
     }
   }
 
@@ -80,7 +90,7 @@ body {
 .mobile-nav {
   position: fixed;
   padding: 1rem;
-  z-index: 1;
+  z-index: 8;
   top: 100px;
   background: linear-gradient(to bottom, #444, #14b7cc);
   width: 300px;
@@ -123,22 +133,44 @@ body {
 }
 
 #hero-container {
-  padding: 10rem 5vw 3rem 5vw;
+  padding: 5rem 0 0 0;
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  background: url(../images/twitch-banner-creator-for-gaming-channels-featuring-a-minimal-background-2469.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  position: relative;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #333;
+    opacity: 0.5;
+    margin-top: -5rem;
+  }
 
   .hero {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    width: 40%;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 5rem;
+    z-index: 1;
+    width: 80%;
 
     .launch {
       color: var(--anchor-color);
-      font-size: 14px;
+      font-size: 20px;
       font-style: italic;
       animation: scale 2s linear 1s infinite;
+      // position: absolute;
+      // left: 50%;
+      // top: 10%;
+      // transform: translate(-50%);
     }
 
     @keyframes scale {
@@ -170,6 +202,66 @@ body {
   }
 }
 
+.opensea {
+  padding: var(--padding);
+  position: relative;
+
+  .categories-subtitle {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+
+  .click-to-view {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    color: var(--anchor-color);
+  }
+
+  .opensea-link {
+    text-decoration: none;
+    color: var(--anchor-color);
+  }
+
+  .open-image {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s linear;
+
+    .close-img {
+      color: var(--text-color-light);
+      font-size: 25px;
+      position: fixed;
+      top: 1%;
+      right: 1%;
+    }
+
+    .background {
+      width: 60vw;
+      height: 600px;
+      background-color: #222;
+      opacity: 0.99;
+    }
+
+    .opensea-image {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%);
+      max-width: 80vw;
+    }
+  }
+
+  .see {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
 .categories {
   padding: var(--padding);
 
@@ -178,22 +270,12 @@ body {
     font-style: italic;
   }
 
-  .categories-subtitle {
-    margin: 0.5rem 0;
-    font-size: 20px;
-  }
-
-  .opensea-link {
-    text-decoration: none;
-    color: var(--anchor-color);
-  }
-
   .arts {
     margin: 0.5rem;
   }
 }
 
-.footer {
+#footer {
   padding: var(--padding);
   background: linear-gradient(to right, #444, #14b7cc);
 
@@ -252,6 +334,15 @@ body {
   }
 }
 
+// @media (max-width:1400px) {
+//    .open-image, .opensea-image{
+//       display: none;
+//     }
+//   }
+//   .click-to-view{
+//     display: none;
+//   }
+
 @media (max-width: 980px) {
   .nav-links {
     display: none !important;
@@ -259,14 +350,19 @@ body {
 
   #hero-container {
     flex-direction: column;
+    background: none;
+    height: 40rem;
 
     .hero {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto 2rem auto;
       text-align: center;
-      margin-bottom: 2rem;
 
       .hero-header {
         font-size: 50px !important;
+      }
+      .launch {
+        font-size: 14px;
       }
     }
 
@@ -282,15 +378,30 @@ body {
     gap: 1.5rem;
   }
 
+  .footer-logo-header {
+    font-size: 25px !important;
+  }
+
   #gallery {
     display: flex;
     flex-direction: row;
     overflow: scroll;
+  }
+
+  .background {
+    width: 100vw !important;
+    height: 100vh !important;
   }
 }
 
 @media (min-width: 980px) {
   .menu-bar {
     display: none !important;
+  }
+}
+
+@media (max-width: 362px) {
+  .sample-image {
+    width: 80vw !important;
   }
 }
