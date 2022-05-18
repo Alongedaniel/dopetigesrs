@@ -13,20 +13,21 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <div class="mobile-nav">
         <h1 class="span">DopeTigers</h1>
         <ul class="mobile-nav-links">
             <li>
-                <a href="" class="mobile-nav-link">Features</a>
+                <a href="" class="mobile-nav-link" onclick="closeMenu()">Features</a>
             </li>
             <li>
-                <a href="#gallery" class="mobile-nav-link">Gallery</a>
+                <a href="#gallery" class="mobile-nav-link" onclick="closeMenu()">Gallery</a>
             </li>
             <li>
-                <a href="" class="mobile-nav-link">Launch</a>
+                <a href="" class="mobile-nav-link" onclick="closeMenu()">Launch</a>
             </li>
             <li>
-                <a href="#footer" class="mobile-nav-link">Contact</a>
+                <a href="#footer" class="mobile-nav-link" onclick="closeMenu()">Contact</a>
             </li>
         </ul>
     </div>
@@ -58,10 +59,9 @@
             <p class="hero-subtitle">To Extinction, the great beyond and the mind blowing develpment</p>
             <p class="hero-subtitle">We welcome the <span class="span">DOPETIGERS</span></p>
         </div>
-        <div class="overlay"></div>
         <!-- <img class="hero-image" src="./images/Group 11.png" alt=""> -->
     </header>
-    <section class="opensea">
+    <section class="opensea" onclick="closeMenu()">
         <h2 class="categories-subtitle">Check out our arts via <a class="opensea-link"
                 href="https://opensea.io/Dope-Tigers " target="blank">OpenSea</a></h2>
         <p class="click-to-view">click image below to view</p>
@@ -72,7 +72,7 @@
             <p class="close-img" onclick="closeImg()">close</p>
         </div>
     </section>
-    <section class="categories close">
+    <section class="categories close" onclick="closeMenu()">
         <h1 class="categories-header">Sabre Toothed Tigers</h1>
         <div id="gallery">
             <img src="./images/Group 5442.png" alt="" class="arts">
@@ -88,7 +88,7 @@
             <img src="./images/Group 5442.png" alt="" class="arts">
         </div>
     </section>
-    <footer id="footer" class="close">
+    <footer id="footer" class="close" onclick="closeMenu()">
         <div class="footer-top">
             <div class="footer-logo">
                 <h1 class="footer-logo-header"><span class="span">Dope</span>Tigers</h1>
@@ -96,11 +96,12 @@
             <div class="footer-nav">
                 <h1 class="footer-nav-header">Check out our social media platforms</h1>
                 <ul class="footer-nav-links">
-                    <li><a class="footer-nav-link"
+                    <li class="link"><a class="footer-nav-link"
                             href="https://twitter.com/dopetigers_nft?t=S5sdy42XJMarpNV6dICNjQ&s=03" target="blank"><i
                                 class="fa-brands fa-twitter"></i></a></li>
-                    <li><a class="footer-nav-link" href="https://instagram.com/dopetiger1?igshid=YmMyMTA2M2Y="
-                            target="blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="link"><a class="footer-nav-link"
+                            href="https://instagram.com/dopetiger1?igshid=YmMyMTA2M2Y=" target="blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
                     <li></li>
                 </ul>
             </div>

@@ -13,15 +13,27 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, right top, left top, from(#444), to(#14b7cc));
-  background: linear-gradient(to left, #444, #14b7cc);
   position: relative;
+  background: url(../images/twitch-banner-creator-for-gaming-channels-featuring-a-minimal-background-2469.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #111;
+  opacity: 0.9;
+  margin-top: -5rem;
+  z-index: -5;
 }
 
 :root {
   --primary-color: #fff;
   --text-color-dark2: #333;
-  --text-color-dark1: #111;
+  --text-color-dark1: #555;
   --anchor-color: #ff3939;
   --span: #ff3939;
   --padding: 3rem 5vw;
@@ -46,8 +58,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 3vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#14b7cc));
-  background: linear-gradient(to bottom, #444, #14b7cc);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 9;
 }
 
@@ -118,10 +129,9 @@ body {
 .mobile-nav {
   position: fixed;
   padding: 1rem;
-  z-index: 8;
+  z-index: 15;
   top: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#14b7cc));
-  background: linear-gradient(to bottom, #444, #14b7cc);
+  background-color: rgba(0, 0, 0, 0.95);
   width: 300px;
   left: 10px;
   height: 400px;
@@ -162,6 +172,7 @@ body {
 
 .mobile-nav .span {
   font-style: italic;
+  color: var(--text-color-dark1);
 }
 
 .opacity {
@@ -178,21 +189,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../images/twitch-banner-creator-for-gaming-channels-featuring-a-minimal-background-2469.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50rem;
   position: relative;
-}
-
-#hero-container .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #333;
-  opacity: 0.5;
-  margin-top: -5rem;
 }
 
 #hero-container .hero {
@@ -259,6 +256,7 @@ body {
 .opensea .categories-subtitle {
   font-size: 30px;
   margin-bottom: 2rem;
+  color: var(--text-color-dark1);
 }
 
 .opensea .click-to-view {
@@ -273,16 +271,16 @@ body {
 }
 
 .opensea .open-image {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 10%;
+  top: 15%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 5;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s cubic-bezier(0, 0, 0, 0.42);
+  transition: all 0.4s cubic-bezier(0, 0, 0, 0.42);
 }
 
 .opensea .open-image .close-img {
@@ -291,13 +289,13 @@ body {
   position: fixed;
   top: 1%;
   right: 1%;
+  cursor: pointer;
 }
 
 .opensea .open-image .background {
-  width: 60vw;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   background-color: #222;
-  opacity: 0.99;
 }
 
 .opensea .open-image .opensea-image {
@@ -321,6 +319,7 @@ body {
 .categories .categories-header {
   font-size: 40px;
   font-style: italic;
+  color: var(--text-color-dark1);
 }
 
 .categories .arts {
@@ -329,8 +328,8 @@ body {
 
 #footer {
   padding: var(--padding);
-  background: -webkit-gradient(linear, left top, right top, from(#444), to(#14b7cc));
-  background: linear-gradient(to right, #444, #14b7cc);
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 10 !important;
 }
 
 #footer .footer-top {
@@ -391,8 +390,13 @@ body {
   font-size: 25px;
 }
 
-#footer .footer-nav-links .footer-nav-link:hover {
-  margin-left: -1rem;
+#footer .footer-nav-links .link:hover {
+  -webkit-transform: translate(-2px);
+          transform: translate(-2px);
+}
+
+#footer .footer-nav-header {
+  color: var(--text-color-dark1);
 }
 
 #footer .copyright {
@@ -405,6 +409,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: var(--text-color-dark1);
 }
 
 @media (max-width: 980px) {
