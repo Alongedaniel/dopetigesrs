@@ -238,7 +238,7 @@ body {
     top: 12%;
     transform: translate(-50%);
     z-index: 5;
-    visibility: hidden;
+    display: none;
     pointer-events: none;
     transition: all 0.4s cubic-bezier(0, 0, 0, 0.42);
 
@@ -267,7 +267,7 @@ body {
   }
 
   .see {
-    visibility: visible;
+    display: initial;
     pointer-events: all;
   }
 }
