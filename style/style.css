@@ -280,7 +280,7 @@ body .overlay {
 .opensea .open-image {
   position: fixed;
   left: 50%;
-  bottom: 0;
+  top: 10.5%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 5;
@@ -288,17 +288,20 @@ body .overlay {
   pointer-events: none;
   -webkit-transition: all 0.4s cubic-bezier(0, 0, 0, 0.42);
   transition: all 0.4s cubic-bezier(0, 0, 0, 0.42);
-  width: 100%;
-  height: 100%;
-  background-color: #111;
 }
 
 .opensea .open-image .close-img {
   color: var(--text-color-light);
   position: fixed;
-  top: 16%;
+  top: 4%;
   right: 1%;
   cursor: pointer;
+}
+
+.opensea .open-image .background {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
 }
 
 .opensea .open-image .opensea-image {
