@@ -6,15 +6,14 @@ let openImage = document.querySelector(".open-image");
 let closeImage = document.querySelector(".close-img");
 
 function toggleMenu() {
-  if (menu.classList.add("opacity") === false) {
-    menuToggler.addEventListener("click", () => {
       menu.classList.add("opacity");
-    });
-  }
+      menuToggler.classList.add("menu-blue")
 }
 
 function closeMenu() {
   menu.classList.remove("opacity");
+  menuToggler.classList.remove("menu-blue")
+
 }
 
 function sampleImg() {
@@ -24,3 +23,4 @@ function sampleImg() {
 function closeImg() {
   openImage.classList.remove("see");
 }
+

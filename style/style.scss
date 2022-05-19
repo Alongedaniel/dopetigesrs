@@ -23,7 +23,7 @@ body {
     position: absolute;
     background-color: #111;
     opacity: 0.9;
-    margin-top: -5rem;
+    // margin-top: -5rem;
     z-index: -5;
   }
 }
@@ -52,12 +52,9 @@ body {
   z-index: 9;
 
   .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.7rem;
     cursor: pointer;
     text-decoration: none;
+  
 
     .logo-header {
       color: var(--text-color-dark1);
@@ -70,9 +67,16 @@ body {
     }
 
     .logo-image {
-      width: 50px;
+      width: 40px;
       border-radius: 2rem;
     }
+  }
+
+  .display-title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .nav-links {
@@ -96,8 +100,12 @@ body {
   }
 
   .menu-bar {
-    color: var(--text-color-light);
+    color: #fff;
     font-size: 20px;
+  }
+
+  .menu-blue{
+    color: lightblue;
   }
 }
 
@@ -124,7 +132,7 @@ body {
 
     .mobile-nav-link {
       text-decoration: none;
-      color: var(--text-color-dark1);
+      color: var(--text-color-light);
       font-size: 22px;
       border-bottom: 1px solid var(--anchor-color);
       transition: all 0.45s ease-in-out;
@@ -138,7 +146,7 @@ body {
 
   .span {
     font-style: italic;
-    color: var(--text-color-dark1);
+    color: var(--text-color-light);
   }
 }
 
@@ -182,7 +190,7 @@ body {
     }
 
     .hero-header {
-      color: var(--text-color-dark1);
+      color: var(--text-color-light);
       font-size: 70px;
       font-weight: 900;
       font-family: "Inter", sans-serif;
@@ -211,7 +219,7 @@ body {
   .categories-subtitle {
     font-size: 30px;
     margin-bottom: 2rem;
-    color: var(--text-color-dark1);
+    color: var(--text-color-light);
   }
 
   .click-to-view {
@@ -272,7 +280,7 @@ body {
   .categories-header {
     font-size: 40px;
     font-style: italic;
-    color: var(--text-color-dark1);
+    color: var(--text-color-light);
   }
 
   .arts {
@@ -335,14 +343,15 @@ body {
   }
 
   .footer-nav-header {
-    color: var(--text-color-dark1);
+    color: var(--text-color-light);
   }
 
   .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-color-dark1);
+    color: var(--text-color-light);
+    font-style: italic;
   }
 }
 
@@ -358,6 +367,10 @@ body {
 @media (max-width: 980px) {
   .nav-links {
     display: none !important;
+  }
+
+  .display-title{
+    justify-content: center !important;
   }
 
   #hero-container {
